@@ -1,6 +1,7 @@
 body{
     background-color: #212121;
     color: antiquewhite;
+    margin:0;
 }
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
@@ -55,28 +56,31 @@ body{
   text-align: center;
   width: 100%;
   background-color: #454545;
-  height: 90px;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 40px;
+  
 }
 
 header{
   width: 100%;
   background-color: #454545;
+  margin: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+ header > h4{
+   padding-right: 15px ;
+ }
+
+header > h1{
+  margin: 0;
+  padding: 10px 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
+header a{
+  text-decoration: none;
+  color: white;
+}
+/*MEDIA QUERIES*/
 
 @media only screen and (max-width:600px){
   .grid-test{
@@ -88,6 +92,10 @@ header{
 
   .last{
     height: 50px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   header{
