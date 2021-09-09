@@ -91,3 +91,9 @@ form > label{
         padding: 12px 20px;
     }
 }
+
+@media only screen and (max-width:320px){
+    input{
+        padding: 12px 10px;
+    }
+}
