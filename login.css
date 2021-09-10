@@ -35,7 +35,7 @@ main{
 
 /*Form css*/
 input{
-    padding: 12px 120px;
+    padding: 12px 0px;
     box-sizing: border-box;
     border: 1px dotted #ccc;
     transition: 0.5s;
@@ -44,6 +44,8 @@ input{
     display: block;
     margin: auto;
     text-align: center;
+    width: 80%;
+    margin-bottom: 5px;
 }
 
 select{
