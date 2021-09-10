@@ -1,3 +1,14 @@
+<?php 
+    $Sitename = 'Deepak suryawanshi';
+    $Sitetitle = "Ghost Blogs";
+
+
+    function getintopc(){
+        echo "Login";
+    }
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,12 +20,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="shortcut icon" type="image/ico" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-<title>Deepak</title>
+<title><?php echo $Sitetitle ?></title>
 </head>
 <body>
 <header>
-    <h1>Deepak suryawanshi</h1>
-    <h4><a href="./login.html">Login</a></h4>
+    <h1><?php echo $Sitename ?></h1>
+    <h4><a href="./login.html"><?php getintopc(); ?></a></h4>
 </header>
 <main>
     <h1>Grid Layout</h1>
@@ -44,3 +55,4 @@
 </div>
 </body>
 </html>
+
